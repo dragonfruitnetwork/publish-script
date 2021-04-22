@@ -5,7 +5,7 @@ $VERSION = "$(Get-Date -UFormat "%Y.%m%d").$($env:GITHUB_RUN_NUMBER)$($Suffix)"
 $WORKINGDIR = Get-Location
 
 # nuget restore
-nuget locales all -clear
+nuget locals all -clear
 nuget restore
 
 # build files
