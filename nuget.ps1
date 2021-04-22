@@ -1,4 +1,4 @@
-param ([string] $TargetName, [string] $TargetProject, [string] $ApiKey, [string]$Suffix = "")
+param ([string] $TargetName, [string] $TargetProject, [string] $ApiKey, [string] $Suffix = "")
 
 # versioning info
 $VERSION = "$(Get-Date -UFormat "%Y.%m%d").$($env:GITHUB_RUN_NUMBER)$($Suffix)"
